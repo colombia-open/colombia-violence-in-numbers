@@ -1,0 +1,69 @@
+name: build
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/**"
+      - "site/**"
+      - "requirements.txt"
+      - ".github/workflows/build.yml"
+  schedule:
+    # Mensual: el 1 de cada mes a las 06:00 UTC. colombia-open no soporta
+    # hoy un webhook de "nuevo release" hacia este repo; si en el futuro su
+    # workflow de release agrega un repository_dispatch hacia este repo,
+    # se puede sumar aqui: `repository_dispatch: {types: [colombia-open-release]}`.
+    - cron: "0 6 1 * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install -r requirements.txt
+
+      - run: python scripts/build_data.py
+      - run: python scripts/optimize_images.py
+      - run: python scripts/generate_og_image.py
+
+      # Solo se commitea de vuelta al repo en corridas programadas/manuales,
+      # nunca en un push (evita un loop push -> workflow -> commit -> push).
+      - name: Commit datos e imagenes generadas
+        if: github.event_name != 'push'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add site/data site/assets/img site/assets/og-image.jpg
+          git diff --cached --quiet || git commit -m "data: refresca series e imagenes generadas desde colombia-open"
+          git diff --cached --quiet || git push
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

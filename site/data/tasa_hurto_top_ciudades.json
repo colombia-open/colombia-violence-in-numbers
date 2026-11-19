@@ -1,0 +1,202 @@
+[
+{
+"ciudad": "Barranquilla",
+"anio": 2018,
+"tasa_100k": 797.5
+},
+{
+"ciudad": "Barranquilla",
+"anio": 2019,
+"tasa_100k": 909.1
+},
+{
+"ciudad": "Barranquilla",
+"anio": 2020,
+"tasa_100k": 671.3
+},
+{
+"ciudad": "Barranquilla",
+"anio": 2021,
+"tasa_100k": 840.0
+},
+{
+"ciudad": "Barranquilla",
+"anio": 2022,
+"tasa_100k": 909.6
+},
+{
+"ciudad": "Barranquilla",
+"anio": 2023,
+"tasa_100k": 1054.6
+},
+{
+"ciudad": "Barranquilla",
+"anio": 2024,
+"tasa_100k": 585.6
+},
+{
+"ciudad": "Barranquilla",
+"anio": 2025,
+"tasa_100k": 796.3
+},
+{
+"ciudad": "Bogota",
+"anio": 2018,
+"tasa_100k": 1433.7
+},
+{
+"ciudad": "Bogota",
+"anio": 2019,
+"tasa_100k": 1697.0
+},
+{
+"ciudad": "Bogota",
+"anio": 2020,
+"tasa_100k": 1077.2
+},
+{
+"ciudad": "Bogota",
+"anio": 2021,
+"tasa_100k": 1402.0
+},
+{
+"ciudad": "Bogota",
+"anio": 2022,
+"tasa_100k": 1747.4
+},
+{
+"ciudad": "Bogota",
+"anio": 2023,
+"tasa_100k": 2013.5
+},
+{
+"ciudad": "Bogota",
+"anio": 2024,
+"tasa_100k": 1648.1
+},
+{
+"ciudad": "Bogota",
+"anio": 2025,
+"tasa_100k": 1548.8
+},
+{
+"ciudad": "Cali",
+"anio": 2018,
+"tasa_100k": 723.8
+},
+{
+"ciudad": "Cali",
+"anio": 2019,
+"tasa_100k": 916.7
+},
+{
+"ciudad": "Cali",
+"anio": 2020,
+"tasa_100k": 595.1
+},
+{
+"ciudad": "Cali",
+"anio": 2021,
+"tasa_100k": 832.4
+},
+{
+"ciudad": "Cali",
+"anio": 2022,
+"tasa_100k": 1069.7
+},
+{
+"ciudad": "Cali",
+"anio": 2023,
+"tasa_100k": 1020.4
+},
+{
+"ciudad": "Cali",
+"anio": 2024,
+"tasa_100k": 964.5
+},
+{
+"ciudad": "Cali",
+"anio": 2025,
+"tasa_100k": 789.8
+},
+{
+"ciudad": "Cartagena",
+"anio": 2018,
+"tasa_100k": 513.7
+},
+{
+"ciudad": "Cartagena",
+"anio": 2019,
+"tasa_100k": 605.0
+},
+{
+"ciudad": "Cartagena",
+"anio": 2020,
+"tasa_100k": 404.1
+},
+{
+"ciudad": "Cartagena",
+"anio": 2021,
+"tasa_100k": 535.4
+},
+{
+"ciudad": "Cartagena",
+"anio": 2022,
+"tasa_100k": 633.8
+},
+{
+"ciudad": "Cartagena",
+"anio": 2023,
+"tasa_100k": 793.8
+},
+{
+"ciudad": "Cartagena",
+"anio": 2024,
+"tasa_100k": 717.4
+},
+{
+"ciudad": "Cartagena",
+"anio": 2025,
+"tasa_100k": 601.9
+},
+{
+"ciudad": "Medellin",
+"anio": 2018,
+"tasa_100k": 905.4
+},
+{
+"ciudad": "Medellin",
+"anio": 2019,
+"tasa_100k": 1110.4
+},
+{
+"ciudad": "Medellin",
+"anio": 2020,
+"tasa_100k": 713.9
+},
+{
+"ciudad": "Medellin",
+"anio": 2021,
+"tasa_100k": 945.2
+},
+{
+"ciudad": "Medellin",
+"anio": 2022,
+"tasa_100k": 1142.6
+},
+{
+"ciudad": "Medellin",
+"anio": 2023,
+"tasa_100k": 1288.0
+},
+{
+"ciudad": "Medellin",
+"anio": 2024,
+"tasa_100k": 997.0
+},
+{
+"ciudad": "Medellin",
+"anio": 2025,
+"tasa_100k": 985.8
+}
+]

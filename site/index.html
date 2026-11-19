@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dos Colombias violentas</title>
+<link rel="icon" href="favicon.ico" sizes="any">
+<meta name="description" content="Homicidios, hurto a personas y lesiones personales en las grandes ciudades y en el resto de Colombia, 2018-2025. Datos de la Policía Nacional vía colombia-open.">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="Dos Colombias violentas">
+<meta property="og:description" content="Las grandes ciudades son más seguras frente al homicidio y mucho más peligrosas frente al hurto. Datos 2018-2025, Policía Nacional vía colombia-open.">
+<meta property="og:image" content="assets/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="progress-bar" id="progress-bar"></div>
+
+<header class="hero duotone" data-slot="hero">
+  <picture class="slot-media">
+    <source media="(max-width: 640px)" type="image/avif" srcset="assets/img/hero-mobile-640.avif">
+    <source media="(max-width: 640px)" type="image/webp" srcset="assets/img/hero-mobile-640.webp">
+    <source media="(max-width: 640px)" srcset="assets/img/hero-mobile-640.jpg">
+    <source type="image/avif" srcset="assets/img/hero-640.avif 640w, assets/img/hero-1280.avif 1280w" sizes="100vw">
+    <source type="image/webp" srcset="assets/img/hero-640.webp 640w, assets/img/hero-1280.webp 1280w" sizes="100vw">
+    <img src="assets/img/hero-1280.jpg" srcset="assets/img/hero-640.jpg 640w, assets/img/hero-1280.jpg 1280w" sizes="100vw"
+         alt="Vista panorámica de un poblado colombiano entre montañas al atardecer" width="1672" height="941" loading="eager">
+  </picture>
+
+  <div class="hero-content">
+    <p class="hero-kicker">Periodismo de datos &middot; Colombia, 2018&ndash;2025</p>
+    <h1>Dos Colombias violentas</h1>
+    <p class="hero-lede">
+      Las grandes ciudades son más seguras frente al homicidio y mucho más
+      peligrosas frente al hurto. Esta es la historia de esa brecha, contada
+      con tasas por cada 100.000 habitantes &mdash; nunca con cifras sueltas.
+    </p>
+
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <div class="hero-stat-value accent-resto">4,2&times;</div>
+        <div class="hero-stat-label">más hurto a personas en las grandes ciudades que en el resto del país, 2025</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-value accent-grandes">&minus;28%</div>
+        <div class="hero-stat-label">tasa de homicidios en las grandes ciudades frente al resto del país, 2025</div>
+      </div>
+    </div>
+
+    <p class="hero-scrollcue">Desliza para empezar &darr;</p>
+  </div>
+  <p class="photo-credit">Imagen ilustrativa generada con IA</p>
+</header>
+
+<main>
+
+  <section class="chapter-break duotone" data-slot="capitulo-campo">
+    <picture class="slot-media">
+      <source type="image/avif" srcset="assets/img/capitulo-campo-640.avif 640w, assets/img/capitulo-campo-1280.avif 1280w" sizes="100vw">
+      <source type="image/webp" srcset="assets/img/capitulo-campo-640.webp 640w, assets/img/capitulo-campo-1280.webp 1280w" sizes="100vw">
+      <img src="assets/img/capitulo-campo-1280.jpg" srcset="assets/img/capitulo-campo-640.jpg 640w, assets/img/capitulo-campo-1280.jpg 1280w" sizes="100vw"
+           alt="Camino rural de tierra entre montañas con niebla al amanecer" width="1914" height="822" loading="lazy">
+    </picture>
+    <div class="chapter-content">
+      <p class="chapter-number">I</p>
+      <h2>El campo</h2>
+      <p>Empecemos por el delito más letal &mdash; y por la Colombia que no sale en las noticias de seguridad urbana.</p>
+    </div>
+    <p class="photo-credit">Imagen ilustrativa generada con IA</p>
+  </section>
+
+  <section class="scrolly" data-group="a">
+    <div class="graphic-pane">
+      <div class="graphic-card">
+        <div id="scene-a" class="chart-inner">
+          <p class="graphic-title" id="chart-title-a">&nbsp;</p>
+          <div id="legend-a" class="legend" aria-hidden="true"></div>
+          <div id="chart-a" class="chart" role="img"></div>
+          <p class="graphic-caption" id="chart-caption-a">&nbsp;</p>
+        </div>
+        <p class="graphic-source">Fuente: Policía Nacional de Colombia / MinDefensa, vía <code>colombia-open</code>. Población: DANE.</p>
+        <details class="data-table-toggle">
+          <summary>Ver los datos de este gráfico</summary>
+          <div id="data-table-a"></div>
+        </details>
+      </div>
+    </div>
+
+    <div class="steps-pane">
+      <article class="step is-active" data-group="a" data-step="0">
+        <p class="step-eyebrow">1 &middot; El promedio nacional</p>
+        <h2>Una tasa de homicidios casi plana</h2>
+        <p>
+          Entre 2018 y 2025, la tasa de homicidios en Colombia osciló entre
+          <strong>25 y 28 por cada 100.000 habitantes</strong>, sin una
+          tendencia clara a la baja ni al alza. El país no se volvió, en
+          conjunto, ni mucho más seguro ni mucho más violento frente al
+          homicidio.
+        </p>
+      </article>
+
+      <article class="step" data-group="a" data-step="1">
+        <p class="step-eyebrow">2 &middot; La primera grieta</p>
+        <h2>El promedio esconde dos países</h2>
+        <p>
+          Fuera de las 15 ciudades más grandes, la tasa de homicidios fue de
+          <strong>29 a 32 por 100.000</strong> &mdash; sistemáticamente más
+          alta que dentro de ellas, donde se mantuvo entre
+          <strong>20 y 23</strong>. En Colombia, vivir lejos de una gran
+          ciudad fue, en promedio, más letal que vivir en ella.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="chapter-break duotone" data-slot="capitulo-ciudad">
+    <picture class="slot-media">
+      <source type="image/avif" srcset="assets/img/capitulo-ciudad-640.avif 640w, assets/img/capitulo-ciudad-1280.avif 1280w" sizes="100vw">
+      <source type="image/webp" srcset="assets/img/capitulo-ciudad-640.webp 640w, assets/img/capitulo-ciudad-1280.webp 1280w" sizes="100vw">
+      <img src="assets/img/capitulo-ciudad-1280.jpg" srcset="assets/img/capitulo-ciudad-640.jpg 640w, assets/img/capitulo-ciudad-1280.jpg 1280w" sizes="100vw"
+           alt="Calle urbana vacía de noche, con luces de alumbrado público" width="1914" height="822" loading="lazy">
+    </picture>
+    <div class="chapter-content">
+      <p class="chapter-number">II</p>
+      <h2>La ciudad</h2>
+      <p>Ahora el delito que más siente la mayoría del país, porque la mayoría vive en una ciudad grande.</p>
+    </div>
+    <p class="photo-credit">Imagen ilustrativa generada con IA</p>
+  </section>
+
+  <section class="scrolly" data-group="b">
+    <div class="graphic-pane">
+      <div class="graphic-card">
+        <div id="scene-b" class="chart-inner">
+          <p class="graphic-title" id="chart-title-b">&nbsp;</p>
+          <div id="legend-b" class="legend" aria-hidden="true"></div>
+          <div id="chart-b" class="chart" role="img"></div>
+          <p class="graphic-caption" id="chart-caption-b">&nbsp;</p>
+          <p class="graphic-caveat" id="chart-caveat-b" hidden>
+            <strong>ⓘ</strong> Este delito solo se cuenta si la víctima denuncia
+            &mdash; un alza puede ser más delito o más denuncia. <a href="#metodologia">Ver metodología</a>.
+          </p>
+        </div>
+        <p class="graphic-source">Fuente: Policía Nacional de Colombia / MinDefensa, vía <code>colombia-open</code>. Población: DANE.</p>
+        <details class="data-table-toggle">
+          <summary>Ver los datos de este gráfico</summary>
+          <div id="data-table-b"></div>
+        </details>
+      </div>
+    </div>
+
+    <div class="steps-pane">
+      <article class="step is-active" data-group="b" data-step="0">
+        <p class="step-eyebrow">3 &middot; Otro delito, otra historia</p>
+        <h2>El hurto a personas se disparó &mdash; o se disparó la denuncia</h2>
+        <p>
+          La tasa de hurto a personas es entre 20 y 28 veces más alta que la
+          de homicidios, y lejos de ser estable, se disparó: de 541 por
+          100.000 habitantes en 2018 a un pico de
+          <strong>755 en 2023</strong>. A diferencia del homicidio, el hurto
+          solo se cuenta si la víctima denuncia &mdash; así que parte de este
+          vaivén puede ser más denuncia, no solo más delito.
+        </p>
+      </article>
+
+      <article class="step" data-group="b" data-step="1">
+        <p class="step-eyebrow">4 &middot; La grieta se invierte</p>
+        <h2>Y esa alza es casi toda urbana</h2>
+        <p>
+          En las grandes ciudades la tasa de hurto llegó a
+          <strong>1.358 por 100.000</strong> en 2023 &mdash; más de cuatro
+          veces la del resto del país (334). La brecha no se cerró: en 2025
+          seguía siendo de <strong>más de cuatro a uno</strong>.
+        </p>
+      </article>
+
+      <article class="step" data-group="b" data-step="2">
+        <picture class="step-photo duotone slot-media" data-slot="detalle-paradero">
+          <source type="image/avif" srcset="assets/img/detalle-paradero-640.avif">
+          <source type="image/webp" srcset="assets/img/detalle-paradero-640.webp">
+          <img src="assets/img/detalle-paradero-640.jpg" alt="Paradero de bus iluminado de noche, con una silueta caminando por la acera" width="1536" height="1024" loading="lazy">
+          <span class="photo-credit">Imagen ilustrativa generada con IA</span>
+        </picture>
+        <p class="step-eyebrow">5 &middot; De cerca</p>
+        <h2>No es igual en cada ciudad</h2>
+        <p>
+          Bogotá y Medellín rondan o superan los 1.000 hurtos por 100.000
+          habitantes en los años recientes; Cali, Barranquilla y Cartagena,
+          algo menos &mdash; pero todas muy por encima del resto del país.
+        </p>
+      </article>
+
+      <article class="step" data-group="b" data-step="3">
+        <p class="step-eyebrow">6 &middot; La prueba de control</p>
+        <h2>¿Son las ciudades más violentas, en general?</h2>
+        <p>
+          Las lesiones personales &mdash;golpes y agresiones que no llegan a
+          ser letales&mdash; dicen que no: en 2025 su tasa fue de
+          <strong>291 por 100.000</strong> en las grandes ciudades frente a
+          <strong>236</strong> en el resto del país, una brecha mucho más
+          pequeña que la del hurto. El patrón de las grandes ciudades no es
+          &ldquo;más violencia&rdquo; en general &mdash; es,
+          específicamente, más hurto.
+        </p>
+      </article>
+
+      <article class="step" data-group="b" data-step="4">
+        <p class="step-eyebrow">7 &middot; El resumen</p>
+        <h2>El péndulo de la violencia urbana</h2>
+        <p>
+          Rebasando cada serie a 100 en 2018 y mirando solo las grandes
+          ciudades: el índice de homicidios apenas se movió
+          (<strong>100 en 2025</strong>) y el de lesiones personales cayó a
+          67, mientras el de hurto llegó a
+          <strong>143 en su pico de 2023</strong>. La violencia letal no
+          subió donde vive más gente &mdash; lo que subió, y mucho, fue el
+          hurto.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="closing duotone" data-slot="cierre">
+    <picture class="slot-media">
+      <source type="image/avif" srcset="assets/img/cierre-640.avif 640w, assets/img/cierre-1280.avif 1280w" sizes="100vw">
+      <source type="image/webp" srcset="assets/img/cierre-640.webp 640w, assets/img/cierre-1280.webp 1280w" sizes="100vw">
+      <img src="assets/img/cierre-1280.jpg" srcset="assets/img/cierre-640.jpg 640w, assets/img/cierre-1280.jpg 1280w" sizes="100vw"
+           alt="Vista de un poblado colombiano entre montañas al amanecer" width="1672" height="941" loading="lazy">
+    </picture>
+    <p class="photo-credit">Imagen ilustrativa generada con IA</p>
+
+    <div class="closing-content">
+      <h2>¿Qué significa esto?</h2>
+      <p>
+        Dos lecturas de inseguridad coexisten en Colombia y no se pueden
+        resolver con un solo número. Por homicidios, el campo y las ciudades
+        intermedias cargan el riesgo más alto. Por hurto, son las 15 ciudades
+        más grandes &mdash;empezando por Bogotá y Medellín&mdash; las que
+        concentran, y de forma creciente, el problema. Una política de
+        seguridad que mida éxito solo en homicidios puede estar ignorando el
+        delito que más siente la mayoría urbana del país.
+      </p>
+
+      <h3 id="metodologia">Metodología</h3>
+      <ul class="method-list">
+        <li>
+          Fuente de los delitos y la población: Policía Nacional de Colombia /
+          Ministerio de Defensa y DANE, distribuidos a través del paquete
+          público <a href="https://github.com/davidcasr/colombia-open" target="_blank" rel="noopener">colombia-open</a>.
+          Corte de los datos: septiembre de 2026 (último mes completo disponible en la fuente al construir esta pieza).
+        </li>
+        <li>
+          Ventana de análisis: 2018&ndash;2025. El dataset de población
+          (<code>demografia</code>) solo cubre proyecciones del DANE desde
+          2018, así que ninguna tasa per cápita del proyecto va más atrás de
+          ese año, aunque los conteos de homicidios y hurto existen desde
+          2003. 2026 se excluye por ser un año todavía incompleto en la fuente.
+        </li>
+        <li>
+          &ldquo;Grandes ciudades&rdquo;: los 15 municipios con población
+          total igual o mayor a 500.000 habitantes en 2025 (Bogotá, Medellín,
+          Cali, Barranquilla, Cartagena, Soacha, Cúcuta, Soledad, Bucaramanga,
+          Valledupar, Bello, Villavicencio, Santa Marta, Montería e Ibagué).
+          &ldquo;Resto del país&rdquo; es todo lo demás.
+        </li>
+        <li>
+          Todas las tasas son casos por cada 100.000 habitantes del grupo
+          correspondiente en ese año (nunca una cifra absoluta sin cruzar con
+          población).
+        </li>
+        <li>
+          <strong>Quiebres de registro:</strong> el homicidio se registra casi
+          siempre (hay un cuerpo), así que es la serie más confiable de la
+          pieza. El hurto y las lesiones personales dependen de que la
+          víctima denuncie; sus variaciones interanuales (hasta ±33% en
+          hurto, frente a ±9% en homicidios) son mayores de lo que explicaría
+          solo un cambio real del delito, y pueden reflejar también cambios
+          en qué tan fácil es denunciar (por ejemplo, la expansión de la
+          denuncia virtual tras 2020). Esta pieza no puede separar ambos
+          efectos con los datos disponibles &mdash; por eso se señala la
+          advertencia directamente junto al gráfico de hurto, en vez de
+          presentar el alza como tendencia real sin matices.
+        </li>
+        <li>
+          Imágenes ilustrativas generadas con IA; ninguna corresponde a un
+          hecho, lugar o persona real documentados.
+        </li>
+      </ul>
+
+      <p class="repo-link">
+        Datos y código de esta pieza:
+        <a href="https://github.com/colombia-open/colombia-violence-in-numbers" target="_blank" rel="noopener">github.com/colombia-open/colombia-violence-in-numbers</a>
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<script type="module" src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,578 @@
+[
+{
+"grupo": "grandes_ciudades",
+"anio": 2018,
+"casos": 4489,
+"poblacion": 19844650,
+"tasa_100k": 22.6,
+"delito": "homicidios"
+},
+{
+"grupo": "grandes_ciudades",
+"anio": 2019,
+"casos": 4388,
+"poblacion": 20243873,
+"tasa_100k": 21.7,
+"delito": "homicidios"
+},
+{
+"grupo": "grandes_ciudades",
+"anio": 2020,
+"casos": 4151,
+"poblacion": 20723595,
+"tasa_100k": 20.0,
+"delito": "homicidios"
+},
+{
+"grupo": "grandes_ciudades",
+"anio": 2021,
+"casos": 4636,
+"poblacion": 20989041,
+"tasa_100k": 22.1,
+"delito": "homicidios"
+},
+{
+"grupo": "grandes_ciudades",
+"anio": 2022,
+"casos": 4394,
+"poblacion": 21151143,
+"tasa_100k": 20.8,
+"delito": "homicidios"
+},
+{
+"grupo": "grandes_ciudades",
+"anio": 2023,
+"casos": 4588,
+"poblacion": 21290627,
+"tasa_100k": 21.5,
+"delito": "homicidios"
+},
+{
+"grupo": "grandes_ciudades",
+"anio": 2024,
+"casos": 4840,
+"poblacion": 21436298,
+"tasa_100k": 22.6,
+"delito": "homicidios"
+},
+{
+"grupo": "grandes_ciudades",
+"anio": 2025,
+"casos": 4874,
+"poblacion": 21557365,
+"tasa_100k": 22.6,
+"delito": "homicidios"
+},
+{
+"grupo": "nacional",
+"anio": 2018,
+"casos": 12573,
+"poblacion": 45894821,
+"tasa_100k": 27.4,
+"delito": "homicidios"
+},
+{
+"grupo": "nacional",
+"anio": 2019,
+"casos": 12547,
+"poblacion": 47269237,
+"tasa_100k": 26.5,
+"delito": "homicidios"
+},
+{
+"grupo": "nacional",
+"anio": 2020,
+"casos": 12010,
+"poblacion": 47795198,
+"tasa_100k": 25.1,
+"delito": "homicidios"
+},
+{
+"grupo": "nacional",
+"anio": 2021,
+"casos": 13685,
+"poblacion": 49005556,
+"tasa_100k": 27.9,
+"delito": "homicidios"
+},
+{
+"grupo": "nacional",
+"anio": 2022,
+"casos": 13536,
+"poblacion": 49481797,
+"tasa_100k": 27.4,
+"delito": "homicidios"
+},
+{
+"grupo": "nacional",
+"anio": 2023,
+"casos": 13555,
+"poblacion": 49842368,
+"tasa_100k": 27.2,
+"delito": "homicidios"
+},
+{
+"grupo": "nacional",
+"anio": 2024,
+"casos": 13497,
+"poblacion": 50165877,
+"tasa_100k": 26.9,
+"delito": "homicidios"
+},
+{
+"grupo": "nacional",
+"anio": 2025,
+"casos": 14038,
+"poblacion": 50812105,
+"tasa_100k": 27.6,
+"delito": "homicidios"
+},
+{
+"grupo": "resto_pais",
+"anio": 2018,
+"casos": 8084,
+"poblacion": 26050171,
+"tasa_100k": 31.0,
+"delito": "homicidios"
+},
+{
+"grupo": "resto_pais",
+"anio": 2019,
+"casos": 8159,
+"poblacion": 27025364,
+"tasa_100k": 30.2,
+"delito": "homicidios"
+},
+{
+"grupo": "resto_pais",
+"anio": 2020,
+"casos": 7859,
+"poblacion": 27071603,
+"tasa_100k": 29.0,
+"delito": "homicidios"
+},
+{
+"grupo": "resto_pais",
+"anio": 2021,
+"casos": 9049,
+"poblacion": 28016515,
+"tasa_100k": 32.3,
+"delito": "homicidios"
+},
+{
+"grupo": "resto_pais",
+"anio": 2022,
+"casos": 9142,
+"poblacion": 28330654,
+"tasa_100k": 32.3,
+"delito": "homicidios"
+},
+{
+"grupo": "resto_pais",
+"anio": 2023,
+"casos": 8967,
+"poblacion": 28551741,
+"tasa_100k": 31.4,
+"delito": "homicidios"
+},
+{
+"grupo": "resto_pais",
+"anio": 2024,
+"casos": 8657,
+"poblacion": 28729579,
+"tasa_100k": 30.1,
+"delito": "homicidios"
+},
+{
+"grupo": "resto_pais",
+"anio": 2025,
+"casos": 9164,
+"poblacion": 29254740,
+"tasa_100k": 31.3,
+"delito": "homicidios"
+},
+{
+"grupo": "grandes_ciudades",
+"anio": 2018,
+"casos": 188262,
+"poblacion": 19844650,
+"tasa_100k": 948.7,
+"delito": "hurto"
+},
+{
+"grupo": "grandes_ciudades",
+"anio": 2019,
+"casos": 227929,
+"poblacion": 20243873,
+"tasa_100k": 1125.9,
+"delito": "hurto"
+},
+{
+"grupo": "grandes_ciudades",
+"anio": 2020,
+"casos": 152853,
+"poblacion": 20723595,
+"tasa_100k": 737.6,
+"delito": "hurto"
+},
+{
+"grupo": "grandes_ciudades",
+"anio": 2021,
+"casos": 204403,
+"poblacion": 20989041,
+"tasa_100k": 973.9,
+"delito": "hurto"
+},
+{
+"grupo": "grandes_ciudades",
+"anio": 2022,
+"casos": 254942,
+"poblacion": 21151143,
+"tasa_100k": 1205.3,
+"delito": "hurto"
+},
+{
+"grupo": "grandes_ciudades",
+"anio": 2023,
+"casos": 289050,
+"poblacion": 21290627,
+"tasa_100k": 1357.6,
+"delito": "hurto"
+},
+{
+"grupo": "grandes_ciudades",
+"anio": 2024,
+"casos": 230397,
+"poblacion": 21436298,
+"tasa_100k": 1074.8,
+"delito": "hurto"
+},
+{
+"grupo": "grandes_ciudades",
+"anio": 2025,
+"casos": 216271,
+"poblacion": 21557365,
+"tasa_100k": 1003.2,
+"delito": "hurto"
+},
+{
+"grupo": "nacional",
+"anio": 2018,
+"casos": 257069,
+"poblacion": 47557672,
+"tasa_100k": 540.5,
+"delito": "hurto"
+},
+{
+"grupo": "nacional",
+"anio": 2019,
+"casos": 306836,
+"poblacion": 48710161,
+"tasa_100k": 629.9,
+"delito": "hurto"
+},
+{
+"grupo": "nacional",
+"anio": 2020,
+"casos": 208037,
+"poblacion": 49455834,
+"tasa_100k": 420.7,
+"delito": "hurto"
+},
+{
+"grupo": "nacional",
+"anio": 2021,
+"casos": 281416,
+"poblacion": 50594081,
+"tasa_100k": 556.2,
+"delito": "hurto"
+},
+{
+"grupo": "nacional",
+"anio": 2022,
+"casos": 351680,
+"poblacion": 51238810,
+"tasa_100k": 686.4,
+"delito": "hurto"
+},
+{
+"grupo": "nacional",
+"anio": 2023,
+"casos": 391005,
+"poblacion": 51808480,
+"tasa_100k": 754.7,
+"delito": "hurto"
+},
+{
+"grupo": "nacional",
+"anio": 2024,
+"casos": 316216,
+"poblacion": 51956559,
+"tasa_100k": 608.6,
+"delito": "hurto"
+},
+{
+"grupo": "nacional",
+"anio": 2025,
+"casos": 289374,
+"poblacion": 52471209,
+"tasa_100k": 551.5,
+"delito": "hurto"
+},
+{
+"grupo": "resto_pais",
+"anio": 2018,
+"casos": 68807,
+"poblacion": 27713022,
+"tasa_100k": 248.3,
+"delito": "hurto"
+},
+{
+"grupo": "resto_pais",
+"anio": 2019,
+"casos": 78907,
+"poblacion": 28466288,
+"tasa_100k": 277.2,
+"delito": "hurto"
+},
+{
+"grupo": "resto_pais",
+"anio": 2020,
+"casos": 55184,
+"poblacion": 28732239,
+"tasa_100k": 192.1,
+"delito": "hurto"
+},
+{
+"grupo": "resto_pais",
+"anio": 2021,
+"casos": 77013,
+"poblacion": 29605040,
+"tasa_100k": 260.1,
+"delito": "hurto"
+},
+{
+"grupo": "resto_pais",
+"anio": 2022,
+"casos": 96738,
+"poblacion": 30087667,
+"tasa_100k": 321.5,
+"delito": "hurto"
+},
+{
+"grupo": "resto_pais",
+"anio": 2023,
+"casos": 101955,
+"poblacion": 30517853,
+"tasa_100k": 334.1,
+"delito": "hurto"
+},
+{
+"grupo": "resto_pais",
+"anio": 2024,
+"casos": 85819,
+"poblacion": 30520261,
+"tasa_100k": 281.2,
+"delito": "hurto"
+},
+{
+"grupo": "resto_pais",
+"anio": 2025,
+"casos": 73103,
+"poblacion": 30913844,
+"tasa_100k": 236.5,
+"delito": "hurto"
+},
+{
+"grupo": "grandes_ciudades",
+"anio": 2018,
+"casos": 86216,
+"poblacion": 19844650,
+"tasa_100k": 434.5,
+"delito": "lesiones"
+},
+{
+"grupo": "grandes_ciudades",
+"anio": 2019,
+"casos": 74460,
+"poblacion": 20243873,
+"tasa_100k": 367.8,
+"delito": "lesiones"
+},
+{
+"grupo": "grandes_ciudades",
+"anio": 2020,
+"casos": 50920,
+"poblacion": 20723595,
+"tasa_100k": 245.7,
+"delito": "lesiones"
+},
+{
+"grupo": "grandes_ciudades",
+"anio": 2021,
+"casos": 63833,
+"poblacion": 20989041,
+"tasa_100k": 304.1,
+"delito": "lesiones"
+},
+{
+"grupo": "grandes_ciudades",
+"anio": 2022,
+"casos": 65565,
+"poblacion": 21151143,
+"tasa_100k": 310.0,
+"delito": "lesiones"
+},
+{
+"grupo": "grandes_ciudades",
+"anio": 2023,
+"casos": 69733,
+"poblacion": 21290627,
+"tasa_100k": 327.5,
+"delito": "lesiones"
+},
+{
+"grupo": "grandes_ciudades",
+"anio": 2024,
+"casos": 63172,
+"poblacion": 21436298,
+"tasa_100k": 294.7,
+"delito": "lesiones"
+},
+{
+"grupo": "grandes_ciudades",
+"anio": 2025,
+"casos": 62669,
+"poblacion": 21557365,
+"tasa_100k": 290.7,
+"delito": "lesiones"
+},
+{
+"grupo": "nacional",
+"anio": 2018,
+"casos": 187302,
+"poblacion": 48176937,
+"tasa_100k": 388.8,
+"delito": "lesiones"
+},
+{
+"grupo": "nacional",
+"anio": 2019,
+"casos": 159443,
+"poblacion": 49194150,
+"tasa_100k": 324.1,
+"delito": "lesiones"
+},
+{
+"grupo": "nacional",
+"anio": 2020,
+"casos": 112392,
+"poblacion": 50184741,
+"tasa_100k": 224.0,
+"delito": "lesiones"
+},
+{
+"grupo": "nacional",
+"anio": 2021,
+"casos": 139419,
+"poblacion": 50945873,
+"tasa_100k": 273.7,
+"delito": "lesiones"
+},
+{
+"grupo": "nacional",
+"anio": 2022,
+"casos": 145269,
+"poblacion": 51502628,
+"tasa_100k": 282.1,
+"delito": "lesiones"
+},
+{
+"grupo": "nacional",
+"anio": 2023,
+"casos": 150221,
+"poblacion": 51974087,
+"tasa_100k": 289.0,
+"delito": "lesiones"
+},
+{
+"grupo": "nacional",
+"anio": 2024,
+"casos": 138288,
+"poblacion": 52371582,
+"tasa_100k": 264.1,
+"delito": "lesiones"
+},
+{
+"grupo": "nacional",
+"anio": 2025,
+"casos": 136444,
+"poblacion": 52885565,
+"tasa_100k": 258.0,
+"delito": "lesiones"
+},
+{
+"grupo": "resto_pais",
+"anio": 2018,
+"casos": 101086,
+"poblacion": 28332287,
+"tasa_100k": 356.8,
+"delito": "lesiones"
+},
+{
+"grupo": "resto_pais",
+"anio": 2019,
+"casos": 84983,
+"poblacion": 28950277,
+"tasa_100k": 293.5,
+"delito": "lesiones"
+},
+{
+"grupo": "resto_pais",
+"anio": 2020,
+"casos": 61472,
+"poblacion": 29461146,
+"tasa_100k": 208.7,
+"delito": "lesiones"
+},
+{
+"grupo": "resto_pais",
+"anio": 2021,
+"casos": 75586,
+"poblacion": 29956832,
+"tasa_100k": 252.3,
+"delito": "lesiones"
+},
+{
+"grupo": "resto_pais",
+"anio": 2022,
+"casos": 79704,
+"poblacion": 30351485,
+"tasa_100k": 262.6,
+"delito": "lesiones"
+},
+{
+"grupo": "resto_pais",
+"anio": 2023,
+"casos": 80488,
+"poblacion": 30683460,
+"tasa_100k": 262.3,
+"delito": "lesiones"
+},
+{
+"grupo": "resto_pais",
+"anio": 2024,
+"casos": 75116,
+"poblacion": 30935284,
+"tasa_100k": 242.8,
+"delito": "lesiones"
+},
+{
+"grupo": "resto_pais",
+"anio": 2025,
+"casos": 73775,
+"poblacion": 31328200,
+"tasa_100k": 235.5,
+"delito": "lesiones"
+}
+]

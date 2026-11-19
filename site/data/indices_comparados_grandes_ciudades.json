@@ -1,0 +1,146 @@
+[
+{
+"anio": 2018,
+"tasa_100k": 22.6,
+"indice": 100.0,
+"delito": "homicidios"
+},
+{
+"anio": 2019,
+"tasa_100k": 21.7,
+"indice": 95.8,
+"delito": "homicidios"
+},
+{
+"anio": 2020,
+"tasa_100k": 20.0,
+"indice": 88.5,
+"delito": "homicidios"
+},
+{
+"anio": 2021,
+"tasa_100k": 22.1,
+"indice": 97.6,
+"delito": "homicidios"
+},
+{
+"anio": 2022,
+"tasa_100k": 20.8,
+"indice": 91.8,
+"delito": "homicidios"
+},
+{
+"anio": 2023,
+"tasa_100k": 21.5,
+"indice": 95.3,
+"delito": "homicidios"
+},
+{
+"anio": 2024,
+"tasa_100k": 22.6,
+"indice": 99.8,
+"delito": "homicidios"
+},
+{
+"anio": 2025,
+"tasa_100k": 22.6,
+"indice": 100.0,
+"delito": "homicidios"
+},
+{
+"anio": 2018,
+"tasa_100k": 948.7,
+"indice": 100.0,
+"delito": "hurto"
+},
+{
+"anio": 2019,
+"tasa_100k": 1125.9,
+"indice": 118.7,
+"delito": "hurto"
+},
+{
+"anio": 2020,
+"tasa_100k": 737.6,
+"indice": 77.7,
+"delito": "hurto"
+},
+{
+"anio": 2021,
+"tasa_100k": 973.9,
+"indice": 102.7,
+"delito": "hurto"
+},
+{
+"anio": 2022,
+"tasa_100k": 1205.3,
+"indice": 127.1,
+"delito": "hurto"
+},
+{
+"anio": 2023,
+"tasa_100k": 1357.6,
+"indice": 143.1,
+"delito": "hurto"
+},
+{
+"anio": 2024,
+"tasa_100k": 1074.8,
+"indice": 113.3,
+"delito": "hurto"
+},
+{
+"anio": 2025,
+"tasa_100k": 1003.2,
+"indice": 105.8,
+"delito": "hurto"
+},
+{
+"anio": 2018,
+"tasa_100k": 434.5,
+"indice": 100.0,
+"delito": "lesiones"
+},
+{
+"anio": 2019,
+"tasa_100k": 367.8,
+"indice": 84.7,
+"delito": "lesiones"
+},
+{
+"anio": 2020,
+"tasa_100k": 245.7,
+"indice": 56.6,
+"delito": "lesiones"
+},
+{
+"anio": 2021,
+"tasa_100k": 304.1,
+"indice": 70.0,
+"delito": "lesiones"
+},
+{
+"anio": 2022,
+"tasa_100k": 310.0,
+"indice": 71.3,
+"delito": "lesiones"
+},
+{
+"anio": 2023,
+"tasa_100k": 327.5,
+"indice": 75.4,
+"delito": "lesiones"
+},
+{
+"anio": 2024,
+"tasa_100k": 294.7,
+"indice": 67.8,
+"delito": "lesiones"
+},
+{
+"anio": 2025,
+"tasa_100k": 290.7,
+"indice": 66.9,
+"delito": "lesiones"
+}
+]

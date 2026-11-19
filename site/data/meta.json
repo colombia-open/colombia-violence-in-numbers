@@ -1,0 +1,85 @@
+{
+"fuente": "Policia Nacional de Colombia / Ministerio de Defensa, via colombia-open (github.com/davidcasr/colombia-open). Poblacion: DANE (proyecciones pos-censo 2018).",
+"anio_min": 2018,
+"anio_max": 2025,
+"umbral_grandes_ciudades": 500000,
+"anio_referencia_poblacion": 2025,
+"n_grandes_ciudades": 15,
+"grandes_ciudades": [
+{
+"nombre_mpio": "BOGOTÁ, D.C.",
+"nombre_dpto": "BOGOTÁ, D.C.",
+"poblacion": 7942867
+},
+{
+"nombre_mpio": "MEDELLÍN",
+"nombre_dpto": "ANTIOQUIA",
+"poblacion": 2528343
+},
+{
+"nombre_mpio": "SANTIAGO DE CALI",
+"nombre_dpto": "VALLE DEL CAUCA",
+"poblacion": 2277296
+},
+{
+"nombre_mpio": "BARRANQUILLA",
+"nombre_dpto": "ATLÁNTICO",
+"poblacion": 1279344
+},
+{
+"nombre_mpio": "CARTAGENA DE INDIAS",
+"nombre_dpto": "BOLÍVAR",
+"poblacion": 1011520
+},
+{
+"nombre_mpio": "SOACHA",
+"nombre_dpto": "CUNDINAMARCA",
+"poblacion": 870077
+},
+{
+"nombre_mpio": "SAN JOSÉ DE CÚCUTA",
+"nombre_dpto": "NORTE DE SANTANDER",
+"poblacion": 793211
+},
+{
+"nombre_mpio": "SOLEDAD",
+"nombre_dpto": "ATLÁNTICO",
+"poblacion": 722845
+},
+{
+"nombre_mpio": "BUCARAMANGA",
+"nombre_dpto": "SANTANDER",
+"poblacion": 617659
+},
+{
+"nombre_mpio": "VALLEDUPAR",
+"nombre_dpto": "CESAR",
+"poblacion": 615987
+},
+{
+"nombre_mpio": "BELLO",
+"nombre_dpto": "ANTIOQUIA",
+"poblacion": 601916
+},
+{
+"nombre_mpio": "VILLAVICENCIO",
+"nombre_dpto": "META",
+"poblacion": 584389
+},
+{
+"nombre_mpio": "SANTA MARTA",
+"nombre_dpto": "MAGDALENA",
+"poblacion": 582394
+},
+{
+"nombre_mpio": "MONTERÍA",
+"nombre_dpto": "CÓRDOBA",
+"poblacion": 574570
+},
+{
+"nombre_mpio": "IBAGUÉ",
+"nombre_dpto": "TOLIMA",
+"poblacion": 554947
+}
+]
+}

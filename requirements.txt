@@ -1,0 +1,8 @@
+polars>=0.20
+Pillow>=10
+pillow-avif-plugin>=1.4
+# PyPI aun publica colombia-open 0.12.0, que no define el dataset
+# delincuencia_homicidios (ya existe en GitHub desde v0.13.0). Mientras se
+# publica un release nuevo en PyPI, se instala directo desde el tag de GitHub.
+# Cuando PyPI tenga >=0.14.0, cambiar esta linea por: colombia-open>=0.14.0
+git+https://github.com/davidcasr/colombia-open.git@v0.14.0
