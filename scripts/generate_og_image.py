@@ -19,9 +19,23 @@ TITLE = "Dos Colombias violentas"
 SUBTITLE = "Homicidios, hurto y lesiones personales en Colombia, 2018\u20132025"
 KICKER = "PERIODISMO DE DATOS \u00b7 COLOMBIA"
 
-FONT_BOLD = Path("C:/Windows/Fonts/seguisb.ttf")
-FONT_BOLD_FALLBACK = Path("C:/Windows/Fonts/segoeuib.ttf")
-FONT_REGULAR = Path("C:/Windows/Fonts/segoeui.ttf")
+
+# Rutas candidatas por plataforma (Windows local, Ubuntu en CI con
+# fonts-dejavu-core instalado por el workflow). Si ninguna existe, se cae a
+# la fuente bitmap por defecto de Pillow en vez de fallar el build.
+FONT_CANDIDATES = {
+    "bold": [
+        Path("C:/Windows/Fonts/seguisb.ttf"),
+        Path("C:/Windows/Fonts/segoeuib.ttf"),
+        Path("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"),
+        Path("/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf"),
+    ],
+    "regular": [
+        Path("C:/Windows/Fonts/segoeui.ttf"),
+        Path("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"),
+        Path("/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf"),
+    ],
+}
 
 BG = (10, 10, 10)
 ACCENT = (57, 135, 229)  # --series-grandes (dark step)
@@ -41,9 +55,14 @@ def cover_crop(im: Image.Image, target_w: int, target_h: int) -> Image.Image:
     return im.crop((left, top, left + new_w, top + new_h)).resize((target_w, target_h), Image.LANCZOS)
 
 
-def font(path: Path, fallback: Path, size: int) -> ImageFont.FreeTypeFont:
-    p = path if path.exists() else fallback
-    return ImageFont.truetype(str(p), size)
+def font(kind: str, size: int) -> ImageFont.ImageFont:
+    for p in FONT_CANDIDATES[kind]:
+        if p.exists():
+            return ImageFont.truetype(str(p), size)
+    try:
+        return ImageFont.load_default(size=size)
+    except TypeError:
+        return ImageFont.load_default()
 
 
 def main() -> None:
@@ -72,9 +91,9 @@ def main() -> None:
     draw = ImageDraw.Draw(base)
     margin = 64
 
-    kicker_font = font(FONT_BOLD, FONT_BOLD_FALLBACK, 24)
-    title_font = font(FONT_BOLD, FONT_BOLD_FALLBACK, 64)
-    subtitle_font = font(FONT_REGULAR, FONT_REGULAR, 28)
+    kicker_font = font("bold", 24)
+    title_font = font("bold", 64)
+    subtitle_font = font("regular", 28)
 
     y = OG_SIZE[1] - 260
     draw.text((margin, y), KICKER, font=kicker_font, fill=ACCENT)
