@@ -142,17 +142,19 @@ h1, h2, h3 {
   background: none;
 }
 
+/* Crédito de IA discreto, como pie de foto: sin cápsula de fondo, pequeño
+   y en gris tenue. En portada, capítulos y cierre queda sobre el fundido
+   al color de la página, así que va en tinta gris; sobre la foto del paso
+   (sin fundido) va en blanco translúcido con sombra suave. */
 .photo-credit {
   position: absolute;
   right: 0.9rem;
-  bottom: 0.7rem;
+  bottom: 0.45rem;
   z-index: 2;
   margin: 0;
-  font-size: 0.68rem;
-  color: rgba(255,255,255,0.75);
-  background: rgba(0,0,0,0.3);
-  padding: 0.2rem 0.55rem;
-  border-radius: 999px;
+  font-size: 0.62rem;
+  letter-spacing: 0.01em;
+  color: var(--text-muted);
 }
 
 /* ============ Hero ============ */
@@ -453,7 +455,13 @@ main { padding: 0 1.25rem; }
   margin: -0.2rem -0.2rem 1rem;
   overflow: hidden;
 }
-.step-photo .photo-credit { font-size: 0.6rem; }
+.step-photo .photo-credit {
+  font-size: 0.58rem;
+  right: 0.6rem;
+  bottom: 0.4rem;
+  color: rgba(255,255,255,0.72);
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+}
 
 /* ============ Cierre ============ */
 
@@ -481,6 +489,8 @@ main { padding: 0 1.25rem; }
 .method-list li { margin-bottom: 0.6rem; }
 .repo-link { margin-top: 1.5rem; font-size: 0.9rem; }
 .closing a { color: var(--series-grandes); text-decoration: underline; }
+/* El crédito del cierre es un <p>: sin esto, .closing p le gana tamaño y color. */
+.closing .photo-credit { font-size: 0.62rem; line-height: 1.3; color: var(--text-muted); }
 
 /* ============ Chart internals (Observable Plot output) ============ */
 .chart .plot-gridline line { stroke: var(--gridline); }
