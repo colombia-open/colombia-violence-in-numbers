@@ -6,13 +6,17 @@ crédito "Imagen ilustrativa generada con IA" visible en la pieza. Ninguna
 muestra víctimas, sangre, armas, cinta policial, uniformes/insignias de
 fuerza pública ni personas identificables — ver `editorial-art-direction`.
 
+La pieza usa como máximo 3 escenas fotográficas (hero, un corte de capítulo
+y el cierre): menos fotos genéricas de IA, más peso puesto en los gráficos.
+El segundo corte de capítulo (`La ciudad`) y el detalle de hurto por ciudad
+(`detalle-paradero`) se quitaron por esto — ver `.chapter-break--plain` en
+`style.css` para el tratamiento sin foto.
+
 | id slot | archivo (original) | proporción | tamaño mínimo | qué debe mostrar | alt | estado |
 |---|---|---|---|---|---|---|
 | `hero` | `originals/hero.webp` | ~16:9 (1672×941) | 1280×720 | Paisaje colombiano atmosférico a sangre, crepúsculo, sin elementos narrativos de violencia — ambiente, no ilustración literal | "Vista panorámica de un poblado colombiano entre montañas al atardecer" | ✅ cargada |
 | `hero-mobile` | `originals/hero-mobile.webp` | ~9:16 (941×1672) | 640×1138 | Recorte vertical del mismo tono/paleta que `hero`, para el hero en móvil | "Vista vertical de un poblado colombiano entre montañas al atardecer" | ✅ cargada |
-| `capitulo-campo` | `originals/capitulo-campo.webp` | ~2.33:1 (1914×822) | 1280×550 | Corte de capítulo antes de las escenas de homicidios: carretera/zona rural, niebla, sin pueblos ni personas | "Camino rural de tierra entre montañas con niebla al amanecer" | ✅ cargada |
-| `capitulo-ciudad` | `originals/capitulo-ciudad.webp` | ~2.33:1 (1914×822) | 1280×550 | Corte de capítulo antes de las escenas de hurto: calle urbana nocturna, atmosférica, sin personas identificables | "Calle urbana vacía de noche, con luces de alumbrado público" | ✅ cargada |
-| `detalle-paradero` | `originals/detalle-paradero.webp` | ~3:2 (1536×1024) | 1280×853 | Imagen de contexto junto al detalle de hurto por ciudad: escena urbana cotidiana (paradero), silueta no identificable | "Paradero de bus iluminado de noche, con una silueta caminando por la acera" | ✅ cargada |
+| `capitulo-campo` | `originals/capitulo-campo.webp` | ~2.33:1 (1914×822) | 1280×550 | Corte de capítulo antes de las escenas de homicidios: carretera/zona rural, niebla, sin pueblos ni personas | "Camino de tierra entre montañas colombianas en la niebla, lejos de una gran ciudad" | ✅ cargada |
 | `cierre` | `originals/cierre.webp` | ~16:9 (1672×941) | 1280×720 | Imagen de cierre, tono más cálido/esperanzador que el resto de la pieza | "Vista de un poblado colombiano entre montañas al amanecer" | ✅ cargada |
 
 ## Convenciones

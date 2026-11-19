@@ -123,6 +123,14 @@ h1, h2, h3 {
 }
 .chapter-content { text-shadow: 0 1px 12px rgba(0,0,0,0.55); }
 
+/* Interludio sin foto (ver IMAGE_BRIEF.md: la pieza usa como máximo 3
+   escenas fotográficas -- hero, un capítulo y el cierre). Mismo degradado
+   de marca que el placeholder de un slot sin imagen, para que la ausencia
+   de foto no se lea como un error. */
+.chapter-break--plain {
+  background: linear-gradient(135deg, var(--series-grandes), var(--series-resto));
+}
+
 /* placeholder elegante si falta el archivo de un slot */
 .slot-missing .slot-media img { display: none; }
 .slot-missing .slot-media {
@@ -448,20 +456,14 @@ main { padding: 0 1.25rem; }
 }
 .step strong { color: var(--text-primary); }
 
-.step-photo {
-  position: relative;
-  aspect-ratio: 3 / 2;
-  border-radius: 10px;
-  margin: -0.2rem -0.2rem 1rem;
-  overflow: hidden;
-}
-.step-photo .photo-credit {
-  font-size: 0.58rem;
-  right: 0.6rem;
-  bottom: 0.4rem;
-  color: rgba(255,255,255,0.72);
-  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
-}
+/* Duplicado de .graphic-caveat para mostrar dentro del propio paso en
+   móvil (ver @media max-width:860px): el gráfico sticky solo puede dar
+   espacio garantizado al texto del paso activo, nunca a lo que quede
+   pegado arriba, así que la advertencia de denuncia viaja con el texto en
+   vez de depender de que el gráfico no quede tapado. Oculto en escritorio,
+   donde el gráfico vive en su propia columna y .graphic-caveat ya es
+   visible sin riesgo de superposición. */
+.step-caveat { display: none; }
 
 /* ============ Cierre ============ */
 
@@ -530,14 +532,26 @@ main { padding: 0 1.25rem; }
      Con grid-template-columns:1fr quedan en filas de grid separadas y el
      sticky pierde su recorrido casi de inmediato. */
   .scrolly { display: block; }
+  /* El panel reserva su alto completo (~55svh, igual que en el patrón de
+     data-scrollytelling) en vez de ajustarse solo al contenido: así el eje
+     X y el pie del gráfico nunca quedan en el tramo que un paso puede
+     cubrir al pasar por encima. min-height (no height) para que una
+     escena más alta -- con leyenda -- siga sin recortarse. La advertencia
+     de denuncia se saca de esta tarjeta en móvil (ver .step-caveat) y no
+     cuenta para este alto. */
   .graphic-pane {
     position: sticky;
     top: 0;
     z-index: 1;
-    min-height: 0;
-    display: block;
+    min-height: 55svh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 0;
     margin: 0 -1.25rem; /* tarjeta a sangre en el ancho del teléfono */
+  }
+  @supports not (height: 1svh) {
+    .graphic-pane { min-height: 55vh; }
   }
   .chart { min-height: 0; }
   /* La tarjeta se dibuja completa (sin recorte ni scroll interno): los
@@ -550,18 +564,37 @@ main { padding: 0 1.25rem; }
   .graphic-title { font-size: 1.1rem; line-height: 1.2; margin-bottom: 0.4rem; }
   .legend { margin-bottom: 0.2rem; }
   .graphic-caption { font-size: 0.8rem; line-height: 1.4; margin-top: 0.3rem; }
-  .graphic-caveat { font-size: 0.75rem; line-height: 1.4; padding: 0.45rem 0.65rem; margin-top: 0.45rem; }
   .graphic-source { font-size: 0.68rem; line-height: 1.4; margin-top: 0.45rem; padding-top: 0.4rem; }
   .data-table-toggle { margin-top: 0.3rem; }
 
-  /* Los pasos pasan POR ENCIMA del gráfico (z-index mayor), con buen
-     espacio entre ellos para que el gráfico se vea completo entre paso y
-     paso. Fondo casi opaco: se lee el texto sin perder el contexto. */
+  /* La advertencia de denuncia es crítica y no puede depender de que el
+     gráfico sticky no quede cubierto: en móvil vive en el propio texto del
+     paso (.step-caveat, duplicado desde el gráfico) en vez de en la
+     tarjeta del gráfico. */
+  .graphic-caveat { display: none; }
+  .step-caveat {
+    display: flex;
+    gap: 0.5rem;
+    margin: 0.9rem 0 0;
+    padding: 0.5rem 0.7rem;
+    font-size: 0.78rem;
+    line-height: 1.4;
+    color: var(--text-secondary);
+    background: var(--surface-2);
+    border-radius: 8px;
+    border-left: 3px solid var(--series-yellow);
+  }
+  .step-caveat a { color: var(--series-grandes); white-space: nowrap; }
+
+  /* Los pasos pasan POR ENCIMA del gráfico (z-index mayor). El panel
+     reserva 55svh (ver .graphic-pane arriba), así que el primer paso y el
+     hueco entre pasos dejan ese tramo libre en vez de superponerse al eje
+     X o al pie del gráfico. */
   .steps-pane {
     position: relative;
     z-index: 2;
     gap: 70svh;
-    padding: 55svh 0 40svh;
+    padding: 58svh 0 40svh;
   }
   .step {
     max-width: none;

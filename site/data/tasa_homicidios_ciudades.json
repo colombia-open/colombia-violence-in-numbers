@@ -1,0 +1,602 @@
+[
+{
+"ciudad": "Barranquilla",
+"anio": 2018,
+"tasa_100k": 26.0
+},
+{
+"ciudad": "Barranquilla",
+"anio": 2019,
+"tasa_100k": 22.3
+},
+{
+"ciudad": "Barranquilla",
+"anio": 2020,
+"tasa_100k": 22.8
+},
+{
+"ciudad": "Barranquilla",
+"anio": 2021,
+"tasa_100k": 27.9
+},
+{
+"ciudad": "Barranquilla",
+"anio": 2022,
+"tasa_100k": 26.1
+},
+{
+"ciudad": "Barranquilla",
+"anio": 2023,
+"tasa_100k": 29.4
+},
+{
+"ciudad": "Barranquilla",
+"anio": 2024,
+"tasa_100k": 38.5
+},
+{
+"ciudad": "Barranquilla",
+"anio": 2025,
+"tasa_100k": 33.5
+},
+{
+"ciudad": "Bello",
+"anio": 2018,
+"tasa_100k": 15.1
+},
+{
+"ciudad": "Bello",
+"anio": 2019,
+"tasa_100k": 24.9
+},
+{
+"ciudad": "Bello",
+"anio": 2020,
+"tasa_100k": 20.8
+},
+{
+"ciudad": "Bello",
+"anio": 2021,
+"tasa_100k": 10.3
+},
+{
+"ciudad": "Bello",
+"anio": 2022,
+"tasa_100k": 9.6
+},
+{
+"ciudad": "Bello",
+"anio": 2023,
+"tasa_100k": 9.4
+},
+{
+"ciudad": "Bello",
+"anio": 2024,
+"tasa_100k": 8.4
+},
+{
+"ciudad": "Bello",
+"anio": 2025,
+"tasa_100k": 7.6
+},
+{
+"ciudad": "Bogota",
+"anio": 2018,
+"tasa_100k": 14.4
+},
+{
+"ciudad": "Bogota",
+"anio": 2019,
+"tasa_100k": 14.0
+},
+{
+"ciudad": "Bogota",
+"anio": 2020,
+"tasa_100k": 13.3
+},
+{
+"ciudad": "Bogota",
+"anio": 2021,
+"tasa_100k": 14.4
+},
+{
+"ciudad": "Bogota",
+"anio": 2022,
+"tasa_100k": 13.0
+},
+{
+"ciudad": "Bogota",
+"anio": 2023,
+"tasa_100k": 13.7
+},
+{
+"ciudad": "Bogota",
+"anio": 2024,
+"tasa_100k": 15.3
+},
+{
+"ciudad": "Bogota",
+"anio": 2025,
+"tasa_100k": 14.9
+},
+{
+"ciudad": "Bucaramanga",
+"anio": 2018,
+"tasa_100k": 15.7
+},
+{
+"ciudad": "Bucaramanga",
+"anio": 2019,
+"tasa_100k": 20.0
+},
+{
+"ciudad": "Bucaramanga",
+"anio": 2020,
+"tasa_100k": 17.6
+},
+{
+"ciudad": "Bucaramanga",
+"anio": 2021,
+"tasa_100k": 21.4
+},
+{
+"ciudad": "Bucaramanga",
+"anio": 2022,
+"tasa_100k": 18.5
+},
+{
+"ciudad": "Bucaramanga",
+"anio": 2023,
+"tasa_100k": 20.1
+},
+{
+"ciudad": "Bucaramanga",
+"anio": 2024,
+"tasa_100k": 21.3
+},
+{
+"ciudad": "Bucaramanga",
+"anio": 2025,
+"tasa_100k": 22.2
+},
+{
+"ciudad": "Cali",
+"anio": 2018,
+"tasa_100k": 51.2
+},
+{
+"ciudad": "Cali",
+"anio": 2019,
+"tasa_100k": 49.2
+},
+{
+"ciudad": "Cali",
+"anio": 2020,
+"tasa_100k": 46.9
+},
+{
+"ciudad": "Cali",
+"anio": 2021,
+"tasa_100k": 52.7
+},
+{
+"ciudad": "Cali",
+"anio": 2022,
+"tasa_100k": 43.2
+},
+{
+"ciudad": "Cali",
+"anio": 2023,
+"tasa_100k": 44.1
+},
+{
+"ciudad": "Cali",
+"anio": 2024,
+"tasa_100k": 41.7
+},
+{
+"ciudad": "Cali",
+"anio": 2025,
+"tasa_100k": 46.9
+},
+{
+"ciudad": "Cartagena",
+"anio": 2018,
+"tasa_100k": 22.1
+},
+{
+"ciudad": "Cartagena",
+"anio": 2019,
+"tasa_100k": 18.0
+},
+{
+"ciudad": "Cartagena",
+"anio": 2020,
+"tasa_100k": 21.0
+},
+{
+"ciudad": "Cartagena",
+"anio": 2021,
+"tasa_100k": 21.5
+},
+{
+"ciudad": "Cartagena",
+"anio": 2022,
+"tasa_100k": 36.4
+},
+{
+"ciudad": "Cartagena",
+"anio": 2023,
+"tasa_100k": 36.5
+},
+{
+"ciudad": "Cartagena",
+"anio": 2024,
+"tasa_100k": 37.7
+},
+{
+"ciudad": "Cartagena",
+"anio": 2025,
+"tasa_100k": 35.6
+},
+{
+"ciudad": "Cucuta",
+"anio": 2018,
+"tasa_100k": 27.0
+},
+{
+"ciudad": "Cucuta",
+"anio": 2019,
+"tasa_100k": 27.0
+},
+{
+"ciudad": "Cucuta",
+"anio": 2020,
+"tasa_100k": 33.6
+},
+{
+"ciudad": "Cucuta",
+"anio": 2021,
+"tasa_100k": 32.8
+},
+{
+"ciudad": "Cucuta",
+"anio": 2022,
+"tasa_100k": 31.3
+},
+{
+"ciudad": "Cucuta",
+"anio": 2023,
+"tasa_100k": 36.6
+},
+{
+"ciudad": "Cucuta",
+"anio": 2024,
+"tasa_100k": 36.8
+},
+{
+"ciudad": "Cucuta",
+"anio": 2025,
+"tasa_100k": 43.4
+},
+{
+"ciudad": "Ibague",
+"anio": 2018,
+"tasa_100k": 15.5
+},
+{
+"ciudad": "Ibague",
+"anio": 2019,
+"tasa_100k": 13.5
+},
+{
+"ciudad": "Ibague",
+"anio": 2020,
+"tasa_100k": 11.9
+},
+{
+"ciudad": "Ibague",
+"anio": 2021,
+"tasa_100k": 16.2
+},
+{
+"ciudad": "Ibague",
+"anio": 2022,
+"tasa_100k": 13.9
+},
+{
+"ciudad": "Ibague",
+"anio": 2023,
+"tasa_100k": 12.4
+},
+{
+"ciudad": "Ibague",
+"anio": 2024,
+"tasa_100k": 13.9
+},
+{
+"ciudad": "Ibague",
+"anio": 2025,
+"tasa_100k": 15.9
+},
+{
+"ciudad": "Medellin",
+"anio": 2018,
+"tasa_100k": 25.8
+},
+{
+"ciudad": "Medellin",
+"anio": 2019,
+"tasa_100k": 23.5
+},
+{
+"ciudad": "Medellin",
+"anio": 2020,
+"tasa_100k": 14.7
+},
+{
+"ciudad": "Medellin",
+"anio": 2021,
+"tasa_100k": 15.6
+},
+{
+"ciudad": "Medellin",
+"anio": 2022,
+"tasa_100k": 14.2
+},
+{
+"ciudad": "Medellin",
+"anio": 2023,
+"tasa_100k": 14.3
+},
+{
+"ciudad": "Medellin",
+"anio": 2024,
+"tasa_100k": 12.2
+},
+{
+"ciudad": "Medellin",
+"anio": 2025,
+"tasa_100k": 13.2
+},
+{
+"ciudad": "Monteria",
+"anio": 2018,
+"tasa_100k": 18.3
+},
+{
+"ciudad": "Monteria",
+"anio": 2019,
+"tasa_100k": 18.1
+},
+{
+"ciudad": "Monteria",
+"anio": 2020,
+"tasa_100k": 13.5
+},
+{
+"ciudad": "Monteria",
+"anio": 2021,
+"tasa_100k": 12.3
+},
+{
+"ciudad": "Monteria",
+"anio": 2022,
+"tasa_100k": 20.1
+},
+{
+"ciudad": "Monteria",
+"anio": 2023,
+"tasa_100k": 11.0
+},
+{
+"ciudad": "Monteria",
+"anio": 2024,
+"tasa_100k": 12.8
+},
+{
+"ciudad": "Monteria",
+"anio": 2025,
+"tasa_100k": 7.5
+},
+{
+"ciudad": "SantaMarta",
+"anio": 2018,
+"tasa_100k": 20.2
+},
+{
+"ciudad": "SantaMarta",
+"anio": 2019,
+"tasa_100k": 24.2
+},
+{
+"ciudad": "SantaMarta",
+"anio": 2020,
+"tasa_100k": 23.7
+},
+{
+"ciudad": "SantaMarta",
+"anio": 2021,
+"tasa_100k": 29.8
+},
+{
+"ciudad": "SantaMarta",
+"anio": 2022,
+"tasa_100k": 35.0
+},
+{
+"ciudad": "SantaMarta",
+"anio": 2023,
+"tasa_100k": 34.5
+},
+{
+"ciudad": "SantaMarta",
+"anio": 2024,
+"tasa_100k": 34.5
+},
+{
+"ciudad": "SantaMarta",
+"anio": 2025,
+"tasa_100k": 29.2
+},
+{
+"ciudad": "Soacha",
+"anio": 2018,
+"tasa_100k": 23.8
+},
+{
+"ciudad": "Soacha",
+"anio": 2019,
+"tasa_100k": 21.9
+},
+{
+"ciudad": "Soacha",
+"anio": 2020,
+"tasa_100k": 21.0
+},
+{
+"ciudad": "Soacha",
+"anio": 2021,
+"tasa_100k": 22.9
+},
+{
+"ciudad": "Soacha",
+"anio": 2022,
+"tasa_100k": 17.7
+},
+{
+"ciudad": "Soacha",
+"anio": 2023,
+"tasa_100k": 18.7
+},
+{
+"ciudad": "Soacha",
+"anio": 2024,
+"tasa_100k": 21.5
+},
+{
+"ciudad": "Soacha",
+"anio": 2025,
+"tasa_100k": 22.2
+},
+{
+"ciudad": "Soledad",
+"anio": 2018,
+"tasa_100k": 23.7
+},
+{
+"ciudad": "Soledad",
+"anio": 2019,
+"tasa_100k": 21.8
+},
+{
+"ciudad": "Soledad",
+"anio": 2020,
+"tasa_100k": 23.7
+},
+{
+"ciudad": "Soledad",
+"anio": 2021,
+"tasa_100k": 32.1
+},
+{
+"ciudad": "Soledad",
+"anio": 2022,
+"tasa_100k": 26.9
+},
+{
+"ciudad": "Soledad",
+"anio": 2023,
+"tasa_100k": 29.8
+},
+{
+"ciudad": "Soledad",
+"anio": 2024,
+"tasa_100k": 34.9
+},
+{
+"ciudad": "Soledad",
+"anio": 2025,
+"tasa_100k": 28.9
+},
+{
+"ciudad": "Valledupar",
+"anio": 2018,
+"tasa_100k": 15.5
+},
+{
+"ciudad": "Valledupar",
+"anio": 2019,
+"tasa_100k": 16.0
+},
+{
+"ciudad": "Valledupar",
+"anio": 2020,
+"tasa_100k": 10.6
+},
+{
+"ciudad": "Valledupar",
+"anio": 2021,
+"tasa_100k": 15.7
+},
+{
+"ciudad": "Valledupar",
+"anio": 2022,
+"tasa_100k": 22.4
+},
+{
+"ciudad": "Valledupar",
+"anio": 2023,
+"tasa_100k": 21.5
+},
+{
+"ciudad": "Valledupar",
+"anio": 2024,
+"tasa_100k": 20.5
+},
+{
+"ciudad": "Valledupar",
+"anio": 2025,
+"tasa_100k": 18.2
+},
+{
+"ciudad": "Villavicencio",
+"anio": 2018,
+"tasa_100k": 22.4
+},
+{
+"ciudad": "Villavicencio",
+"anio": 2019,
+"tasa_100k": 17.2
+},
+{
+"ciudad": "Villavicencio",
+"anio": 2020,
+"tasa_100k": 16.8
+},
+{
+"ciudad": "Villavicencio",
+"anio": 2021,
+"tasa_100k": 19.8
+},
+{
+"ciudad": "Villavicencio",
+"anio": 2022,
+"tasa_100k": 15.8
+},
+{
+"ciudad": "Villavicencio",
+"anio": 2023,
+"tasa_100k": 21.1
+},
+{
+"ciudad": "Villavicencio",
+"anio": 2024,
+"tasa_100k": 21.1
+},
+{
+"ciudad": "Villavicencio",
+"anio": 2025,
+"tasa_100k": 26.7
+}
+]
