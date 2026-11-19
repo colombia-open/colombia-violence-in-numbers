@@ -10,8 +10,8 @@ lesiones personales (control) muestran una brecha mucho menor entre los dos
 grupos, lo que sugiere que el patrón urbano es específico del hurto, no
 violencia generalizada.
 
-Ver la pieza completa para el guion de 7 escenas (en dos capítulos
-fotográficos: "El campo" y "La ciudad") y la lectura de cada gráfico.
+Ver la pieza completa para el guion de 8 pasos (en dos capítulos: "Fuera de
+las grandes ciudades" y "La ciudad") y la lectura de cada gráfico.
 
 ## Skills del proyecto
 
@@ -62,7 +62,7 @@ scripts/build_data.py      # Polars: agrega los datasets y escribe site/data/*.j
 scripts/optimize_images.py # Pillow: originals/*.{png,jpg,webp} -> variantes AVIF/WebP/JPG
 scripts/generate_og_image.py # genera site/assets/og-image.jpg (1200x630) desde el hero
 site/                       # HTML/CSS/JS plano (Scrollama.js + Observable Plot)
-  data/                     # 4 JSON pequeños, uno por grafico real de la pieza
+  data/                     # 5 JSON pequeños, uno por grafico real de la pieza
   assets/img/
     originals/              # fotos fuente (no se sirven directo)
     IMAGE_BRIEF.md           # tabla de slots: id, archivo, proporcion, alt, estado

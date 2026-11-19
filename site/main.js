@@ -19,6 +19,7 @@ const CIUDAD_LABEL = {
   Cali: "Cali",
   Barranquilla: "Barranquilla",
   Cartagena: "Cartagena",
+  Cucuta: "Cúcuta",
 };
 
 const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -183,11 +184,11 @@ function lineChart({ rows, seriesKey, seriesOrder, seriesLabelFn, shortLabelFn, 
   return svg;
 }
 
-function smallMultiplesChart(rows, order, restoRows, dims) {
+function smallMultiplesChart(rows, order, restoRows, dims, yLabel = "hurtos por 100.000 hab.") {
   const colors = palette();
   const { width, height, mobile } = dims;
-  // Referencia: la tasa de hurto del resto del país, repetida en cada panel,
-  // para que "todas muy por encima del resto del país" se vea, no se lea.
+  // Referencia: la tasa del resto del país para el mismo delito, repetida en
+  // cada panel, para que la comparación se vea, no se lea.
   const ref = order.flatMap((c) => restoRows.map((r) => ({ ...r, ciudad: c })));
   return Plot.plot({
     width,
@@ -196,7 +197,7 @@ function smallMultiplesChart(rows, order, restoRows, dims) {
     marginRight: mobile ? 48 : 64,
     style: { fontSize: mobile ? "11px" : "12px" },
     x: { label: null, tickFormat: (d) => String(d), ticks: mobile ? 4 : undefined },
-    y: yAxis("hurtos por 100.000 hab.", mobile, { zero: true, ticks: 2 }),
+    y: yAxis(yLabel, mobile, { zero: true, ticks: 2 }),
     fy: { domain: order.map((c) => CIUDAD_LABEL[c]), axis: null, padding: 0.12 },
     marks: [
       Plot.frame({ stroke: cssVar("--gridline") }),
@@ -376,9 +377,23 @@ const SCENES_A = [
   }),
   (data, dims) => grupoScene(data, dims, {
     delito: "homicidios", groups: ["grandes_ciudades", "resto_pais"],
-    title: "Vivir lejos de una gran ciudad fue más letal",
+    title: "Vivir lejos de una gran ciudad fue más letal, en promedio",
     caption: "Grandes ciudades (≥500.000 hab. en 2025) vs. resto del país.",
   }),
+  (data, dims) => {
+    const order = ["Cali", "Cucuta", "Bogota", "Medellin", "Barranquilla", "Cartagena"];
+    const rows = data.homicidiosCiudades.filter((r) => order.includes(r.ciudad));
+    const resto = data.grupo.filter((r) => r.delito === "homicidios" && r.grupo === "resto_pais");
+    return {
+      title: "Cali rompe la regla",
+      caption: "Tasa de homicidios por cada 100.000 habitantes, 2018–2025.",
+      caveat: false,
+      legend: [],
+      svg: smallMultiplesChart(rows, order, resto, dims({ tall: true }), "homicidios por 100.000 hab."),
+      tableRows: rows,
+      tableSpec: { xKey: "anio", xLabel: "Año", seriesKey: "ciudad", seriesLabelFn: (c) => CIUDAD_LABEL[c], valueKey: "tasa_100k", valueLabel: "Tasa de homicidios por ciudad" },
+    };
+  },
 ];
 
 const SCENES_B = [
@@ -418,7 +433,7 @@ const SCENES_B = [
     const order = ["homicidios", "hurto", "lesiones"];
     const rows = data.indices;
     return {
-      title: "El péndulo de la violencia urbana",
+      title: "Lo letal se quedó quieto; el hurto no",
       caption: "Índice 2018 = 100, solo grandes ciudades.",
       caveat: false,
       legend: order.map((d) => ({ key: d, label: DELITO_LABEL[d] })),
@@ -432,12 +447,13 @@ const SCENES_B = [
 /* ---------- carga de datos + orquestación de scroll ---------- */
 
 async function loadData() {
-  const [grupo, topCities, indices] = await Promise.all([
+  const [grupo, topCities, homicidiosCiudades, indices] = await Promise.all([
     fetch("data/tasas_por_grupo.json").then((r) => r.json()),
     fetch("data/tasa_hurto_top_ciudades.json").then((r) => r.json()),
+    fetch("data/tasa_homicidios_ciudades.json").then((r) => r.json()),
     fetch("data/indices_comparados_grandes_ciudades.json").then((r) => r.json()),
   ]);
-  return { grupo, topCities, indices };
+  return { grupo, topCities, homicidiosCiudades, indices };
 }
 
 function setupProgressBar() {

@@ -36,6 +36,27 @@ ZOOM_CITIES = {
     "13001": "Cartagena",
 }
 
+# Las 15 grandes ciudades (umbral de poblacion >=500k en 2025), para la tasa
+# de homicidios por ciudad (escena "Cali es la excepcion"). Códigos y nombres
+# verificados contra el dataset `municipios` de colombia-open.
+BIG_CITY_SLUGS = {
+    "11001": "Bogota",
+    "05001": "Medellin",
+    "76001": "Cali",
+    "08001": "Barranquilla",
+    "13001": "Cartagena",
+    "25754": "Soacha",
+    "54001": "Cucuta",
+    "08758": "Soledad",
+    "68001": "Bucaramanga",
+    "20001": "Valledupar",
+    "05088": "Bello",
+    "50001": "Villavicencio",
+    "47001": "SantaMarta",
+    "23001": "Monteria",
+    "73001": "Ibague",
+}
+
 OUT_DIR = Path(__file__).resolve().parent.parent / "site" / "data"
 
 FUENTE = (
@@ -93,12 +114,12 @@ def rate_by_group(counts: pl.DataFrame, pop: pl.DataFrame, big_cities: list[str]
     return out.sort(["grupo", "anio"])
 
 
-def rate_top_cities(counts: pl.DataFrame, pop: pl.DataFrame) -> pl.DataFrame:
-    joined = counts.filter(pl.col("cod_mpio").is_in(list(ZOOM_CITIES))).join(
+def rate_by_city(counts: pl.DataFrame, pop: pl.DataFrame, city_map: dict[str, str]) -> pl.DataFrame:
+    joined = counts.filter(pl.col("cod_mpio").is_in(list(city_map))).join(
         pop, on=["cod_mpio", "anio"], how="inner"
     )
     joined = joined.with_columns(
-        pl.col("cod_mpio").replace(ZOOM_CITIES).alias("ciudad"),
+        pl.col("cod_mpio").replace(city_map).alias("ciudad"),
         (pl.col("casos") / pl.col("poblacion") * 100_000).round(1).alias("tasa_100k"),
     )
     return joined.select(["ciudad", "anio", "tasa_100k"]).sort(["ciudad", "anio"])
@@ -128,14 +149,22 @@ def main() -> None:
 
     pop = load_population(client)
     big_cities = big_city_codes(pop)
+    if set(big_cities) != set(BIG_CITY_SLUGS):
+        raise RuntimeError(
+            "BIG_CITY_SLUGS desactualizado: las 15 grandes ciudades "
+            f"calculadas ({sorted(big_cities)}) no coinciden con el mapa "
+            f"fijo ({sorted(BIG_CITY_SLUGS)}). Actualiza BIG_CITY_SLUGS."
+        )
 
     homicidios = yearly_counts(client.load_polars("delincuencia_homicidios"))
     hurto = yearly_counts(client.load_polars("delincuencia_hurto_personas"))
     lesiones = yearly_counts(client.load_polars("delincuencia_lesiones_personales"))
 
     # 1) tasas_por_grupo.json -- nacional / grandes_ciudades / resto_pais por
-    #    delito. Alimenta las escenas 1-2 (homicidios), 3-4 (hurto) y 6
-    #    (lesiones como control: casi no hay brecha entre grupos).
+    #    delito. Alimenta los pasos 1-2 (homicidios), 4-5 (hurto) y 7
+    #    (lesiones como control: casi no hay brecha entre grupos). El grupo
+    #    resto_pais de homicidios tambien es la linea de referencia del
+    #    paso 3 (small multiples por ciudad).
     grupo_rows = []
     for delito, counts in (
         ("homicidios", homicidios),
@@ -148,11 +177,18 @@ def main() -> None:
         grupo_rows.extend(rows)
     write_json(grupo_rows, "tasas_por_grupo.json")
 
-    # 2) tasa_hurto_top_ciudades.json -- escena 5
-    hurto_top = rate_top_cities(hurto, pop)
+    # 2) tasa_hurto_top_ciudades.json -- paso 6
+    hurto_top = rate_by_city(hurto, pop, ZOOM_CITIES)
     write_json(hurto_top.to_dicts(), "tasa_hurto_top_ciudades.json")
 
-    # 3) indices_comparados_grandes_ciudades.json -- escena 7 (resumen)
+    # 2b) tasa_homicidios_ciudades.json -- escena "Cali es la excepcion":
+    #     tasa de homicidios de las 15 grandes ciudades (misma metodologia y
+    #     poblacion DANE que el resto de tasas), para contrastar cada una
+    #     contra la linea de referencia del resto del pais.
+    homicidios_ciudades = rate_by_city(homicidios, pop, BIG_CITY_SLUGS)
+    write_json(homicidios_ciudades.to_dicts(), "tasa_homicidios_ciudades.json")
+
+    # 3) indices_comparados_grandes_ciudades.json -- paso 8 (resumen)
     series = {
         "homicidios": big_city_rate_series(homicidios, pop, big_cities),
         "hurto": big_city_rate_series(hurto, pop, big_cities),
