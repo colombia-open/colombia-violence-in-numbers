@@ -124,12 +124,16 @@ h1, h2, h3 {
 .chapter-content { text-shadow: 0 1px 12px rgba(0,0,0,0.55); }
 
 /* Interludio sin foto (ver IMAGE_BRIEF.md: la pieza usa como máximo 3
-   escenas fotográficas -- hero, un capítulo y el cierre). Mismo degradado
-   de marca que el placeholder de un slot sin imagen, para que la ausencia
-   de foto no se lea como un error. */
+   escenas fotográficas -- hero, un capítulo y el cierre). Apertura solo
+   tipográfica sobre el mismo fondo claro de la página, coherente con el
+   resto de la pieza en vez de un degradado de marca sobre el que destacar. */
 .chapter-break--plain {
-  background: linear-gradient(135deg, var(--series-grandes), var(--series-resto));
+  background: var(--page-plane);
 }
+.chapter-break--plain .chapter-content { text-shadow: none; }
+.chapter-break--plain .chapter-number { color: var(--series-grandes); }
+.chapter-break--plain .chapter-content h2 { color: var(--text-primary); }
+.chapter-break--plain .chapter-content p { color: var(--text-secondary); }
 
 /* placeholder elegante si falta el archivo de un slot */
 .slot-missing .slot-media img { display: none; }

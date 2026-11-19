@@ -208,11 +208,15 @@ function smallMultiplesChart(rows, order, restoRows, dims, yLabel = "hurtos por 
         stroke: colors.resto_pais, strokeWidth: 1.5, strokeDasharray: "3,3", strokeOpacity: 0.85,
         curve: "monotone-x",
       }),
-      Plot.text(ref.filter((d) => d.ciudad === order[0]), Plot.selectLast({
+      // Ancla en el primer año, textAnchor "start" y dy positivo (debajo de
+      // la linea punteada): deja libre el borde derecho, donde ya compiten
+      // el punto final, su etiqueta de valor y la linea de la ciudad, que
+      // en paneles como Cali queda muy por encima de la referencia.
+      Plot.text(ref.filter((d) => d.ciudad === order[0]), Plot.selectFirst({
         x: "anio", y: "tasa_100k",
         fy: (d) => CIUDAD_LABEL[d.ciudad],
         text: () => "Resto del país",
-        dy: -8, textAnchor: "end",
+        dy: 12, textAnchor: "start",
         fill: colors.resto_pais, fontSize: mobile ? 10 : 11,
       })),
       // Un solo color (el de "grandes ciudades"): todas estas ciudades son de
